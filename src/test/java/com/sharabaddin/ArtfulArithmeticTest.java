@@ -22,12 +22,12 @@ public class ArtfulArithmeticTest {
     }
 
     @Test
-    public void multiBigInteger_checkNegativeNumber() {
+    public void multiBigInteger_negativeNumber() {
         assertEquals("", ArtfulArithmetic.multiBigInteger("-1", 9));
     }
 
     @Test
-    public void multiBigInteger_checkNumbers() {
+    public void multiBigInteger_incorrectNumber() {
         assertEquals("", ArtfulArithmetic.multiBigInteger("q1q2e3w", 9));
     }
 

@@ -6,6 +6,6 @@ package com.sharabaddin;
  */
 public class App {
     public static void main( String[] args ) {
-        System.out.println(Integer.MAX_VALUE);
+        System.out.println(ArtfulArithmetic.multiBigInteger("123", 2));
     }
 }

@@ -6,5 +6,6 @@ package com.sharabaddin;
 public class ArtfulArithmetic {
     public static String multiBigInteger(String text, int number) {
         return "";
+
     }
 }

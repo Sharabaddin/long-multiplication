@@ -1,9 +1,20 @@
 package com.sharabaddin;
 
-import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class ArtfulArithmeticTest {
+    @Test
+    public void multiBigInteger_checkEmptyString() {
+        assertEquals("", ArtfulArithmetic.multiBigInteger("", 9));
+    }
+
+    @Test
+    public void multiBigInteger_checkNullString() {
+        assertEquals("", ArtfulArithmetic.multiBigInteger(null, 9));
+    }
+
     @Test
     public void multiBigInteger_withoutOverflow() {
         // Max Integer =  2147483647 * max parameter

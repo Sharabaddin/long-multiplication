@@ -17,8 +17,9 @@ public class ArtfulArithmeticTest {
 
     @Test
     public void multiBigInteger_withoutOverflow() {
-        // Max Integer =  2147483647 * max parameter
-        assertEquals("19327352823", ArtfulArithmetic.multiBigInteger("2147483647", 9));
+        // Max Integer =  2 147 483 647
+        // 123*9=1239
+        assertEquals("1107", ArtfulArithmetic.multiBigInteger("123", 9));
     }
 
     @Test
@@ -28,7 +29,8 @@ public class ArtfulArithmeticTest {
 
     @Test
     public void multiBigInteger_incorrectNumber() {
-        assertEquals("", ArtfulArithmetic.multiBigInteger("q1q2e3w", 9));
+        assertEquals("",
+                ArtfulArithmetic.multiBigInteger("q1q2e3w", 9));
     }
 
     @Test
